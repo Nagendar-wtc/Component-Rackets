@@ -1,0 +1,82 @@
+/**
+ * Generates a set of style rules for the "navigation" tab UI.
+ */
+@include extjs-tab-panel-ui(
+    $ui: 'navlocater',
+
+    $ui-tab-background-opacity-over: 1,
+
+    $ui-bar-background-color: $color-white,
+
+    $ui-tab-color: $color-gray-b,
+    $ui-tab-color-over: $color-white,
+    $ui-tab-color-active: $color-soft-red-f,
+
+    $ui-tab-background-color: transparent,
+    $ui-tab-background-color-active: $color-white,
+    $ui-tab-background-color-over: $color-soft-red-f,   
+    
+    $ui-tab-background-gradient: 'none',
+    $ui-tab-background-gradient-over: 'none',
+    $ui-tab-background-gradient-active: 'none',
+    
+    $ui-tab-glyph-color: $color-gray-b,
+    $ui-tab-glyph-color-over: $color-white,
+    $ui-tab-glyph-color-active: $color-soft-red-f,
+
+    $ui-tab-outline-color-focus: $color-soft-red-f
+);
+
+/**
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+@include extjs-panel-ui(
+    $ui: 'navlocater',
+
+    $ui-header-padding: 0,
+
+    $ui-header-font-size: 20px,
+    $ui-header-font-weight: bold,
+    
+    $ui-header-icon-width: 24px,
+    $ui-header-icon-height: 24px,
+    $ui-header-icon-spacing: 15px,
+
+    $ui-header-color: $color-white,
+
+    $ui-header-line-height: 24px,
+
+    $ui-header-glyph-opacity: 1,
+    $ui-header-glyph-color: $color-white,
+
+    $ui-header-text-margin: 36px,
+    
+    $ui-header-noborder-adjust: false,
+
+    $ui-header-background-color: $color-white
+);
+
+.x-title-icon-navigation {
+    font-family: FontAwesome;
+    color: $color-white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.x-tab-icon-el-navigation {
+    font-family: FontAwesome;
+    color: $color-gray-a;
+
+    .x-tab-over & {
+        color: $color-light-gray-c;
+    }
+
+    .x-tab-active & {
+        color: $color-white;
+    }
+}
+
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
